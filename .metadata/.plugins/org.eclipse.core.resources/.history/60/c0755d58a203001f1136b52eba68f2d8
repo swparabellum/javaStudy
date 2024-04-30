@@ -1,0 +1,24 @@
+
+class ThisTest{
+	int x,y;
+	
+	public ThisTest() {
+		this(10,10);
+		}
+	public ThisTest(int x) {
+		this(x,10);
+	}
+	public ThisTest(int x,int y) {
+		this.x = x;
+		this.y = y;
+	}
+}
+
+public class Ex12 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

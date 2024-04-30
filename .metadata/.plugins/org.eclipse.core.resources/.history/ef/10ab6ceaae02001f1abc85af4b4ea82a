@@ -1,0 +1,15 @@
+
+public class Ex01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
+
+class point1{
+	int x;
+	int y;
+	// point1(){} 디폴트 생성자 는 컴파일시 자동생성될것,
+}

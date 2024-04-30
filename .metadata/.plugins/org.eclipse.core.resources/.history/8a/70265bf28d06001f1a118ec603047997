@@ -1,0 +1,43 @@
+
+public class Ex02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Triangle ref = new Triangle();
+		ref.setColor(Color.RED);
+		switch(ref.getColor()) {
+		case 1:
+			System.out.println("빨간색");
+			break;
+		case 2:
+			System.out.println("green");
+			break;
+		case 3:
+			System.out.println("blue");
+			break;
+		}
+		System.out.println("삼각형");
+	}
+
+}
+
+interface Color{
+	//public static final 생략 정의상수
+	int RED = 1;
+	int GREEN = 2;
+	int BLUE = 3;
+	//public abstract 생략, 추상메서드
+	int getColor();
+	void setColor(int c);
+}
+
+class Triangle implements Color{
+	int color = 0;
+	public int getColor() { //재정의
+	return color;
+	
+	}
+	public void setColor(int c) {//재정의
+		color = c;
+	}
+}

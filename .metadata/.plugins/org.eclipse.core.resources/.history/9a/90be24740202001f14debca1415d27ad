@@ -1,0 +1,16 @@
+
+public class Ex9 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int [] itx = new int[5];
+		itx[0]=3;
+		itx[1]=4;
+		itx[2]=5;
+		itx[3]=6;
+		itx[4]=7;
+		
+		System.out.println(itx[0]+" "+itx[1]+" "+itx[2]+" "+itx[3]+" "+itx[4]);
+	}
+
+}

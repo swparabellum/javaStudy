@@ -1,0 +1,27 @@
+
+public class Exam2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str = new String("해피");
+		System.out.println(str);
+		String str1 = str.concat("썬데이"); //문자열결합
+		System.out.println(str1);
+		str1= str1.replace("썬데이", "바이러스");
+		System.out.println(str1);
+		
+		str1 = "  " + str1+"   "; //공백 앞에 2개 뒤에 3개 추가
+		System.out.println("공백 추가된 길이: "+str1.length());
+		str1= str1.trim();
+		System.out.println("공백 제거된 길이: "+str1.length());
+		int len = (str1.length()+1)*2;
+		System.out.println("메모리용량: "+len+"bytes");
+		char ch = str1.charAt(2);
+		
+		String str2 = str1.substring(3);
+		System.out.println(str2);
+		String str3 = str1.substring(2,4);
+		System.out.println(str3);
+	}
+
+}

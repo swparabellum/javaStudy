@@ -1,0 +1,28 @@
+import java.util.Date;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
+public class Ex9 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String [] month = {"1월","2월","3월","4월","5월","6월","7월","8월","9월","10월","11월","12월"};
+		String[] week= {" ","일","월","화","수","목","금","토","일"};
+		
+		Calendar cal = Calendar.getInstance();
+		cal.set(cal.get(Calendar.YEAR),cal.get(Calendar.MONTH),cal.get(Calendar.DATE));
+		
+		Date day = cal.getTime();
+		
+		SimpleDateFormat sdf1, sdf2, sdf3;
+		sdf1= new SimpleDateFormat("yyyy년  MM월 dd일 E요일");
+		sdf2= new SimpleDateFormat("yyyy-MM-dd HH:mm");
+		sdf3= new SimpleDateFormat("yyyy-MM-dd hh:mm a");
+		
+		System.out.println(sdf1.format(day));
+		System.out.println(sdf2.format(day));
+		System.out.println(sdf3.format(day));
+		
+	}
+
+}

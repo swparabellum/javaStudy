@@ -1,0 +1,21 @@
+
+public class Ex03 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
+
+class overload{
+	void test() {
+		System.out.println("매개변수 없음.");
+	}
+	void test(int a, int b) {
+		System.out.println("매개변수 int "+a+"와 int "+b);
+	}
+	void test(double b) {
+		System.out.println();
+	}
+}

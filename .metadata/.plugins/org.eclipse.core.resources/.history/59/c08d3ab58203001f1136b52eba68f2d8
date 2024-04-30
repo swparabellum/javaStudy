@@ -1,0 +1,16 @@
+import java.util.Calendar;
+
+public class Ex9 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String [] month = {"1월","2월","3월","4월","5월","6월","7월","8월","9월","10월","11월","12월"};
+		String[] week= {"월","화","수","목","금","토","일"};
+		Calendar cal = Calendar.getInstance();
+		System.out.print(cal.get(Calendar.YEAR)+"-");
+		System.out.print(cal.get(Calendar.MONTH)+"-");
+		System.out.print(cal.get(Calendar.DATE)+"일");
+		
+	}
+
+}

@@ -1,0 +1,29 @@
+class Point2{
+	private int x; //Ä¸½¶È­(Á¤º¸º¸È£
+	private int y;
+	
+	public void setX(int new_x) {
+		x = new_x;
+	}
+	public void setY(int new_y) {
+		y=new_y;
+	}
+	public int getX() {
+		return x;
+	}
+	public int getY() {
+		return y;
+	}
+}
+
+
+public class Ex01 {
+
+	public static void main(String[] args) {
+		Point2 pt2 = new Point2();
+		
+		pt2.setX(10);
+		pt2.setY(20);
+		System.out.println(pt2.getX()+", "+pt2.getY());
+	}
+}

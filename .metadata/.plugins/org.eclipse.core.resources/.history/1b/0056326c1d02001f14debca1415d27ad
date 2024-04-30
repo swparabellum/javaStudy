@@ -1,0 +1,24 @@
+
+public class Ex14 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s1 = "Java Korea";
+		String s2 = new String("Java Korea");
+		String s3 = s2.intern();
+		String s4 = "Java Korea";
+		
+		System.out.println("객체(주소)비교");
+		System.out.println("S1 == S2 "+(s1==s2));
+		System.out.println("S2 == S3 "+(s2==s3));
+		System.out.println("S1 == S3 "+(s1==s3));
+		System.out.println("S1 == S4 "+(s1==s4));
+		System.out.println("객체가 참조하는 데이터 비교");
+		System.out.println(s1.equals(s2));
+		System.out.println(s2.equals(s3));
+		System.out.println(s1.equals(s3));
+		System.out.println(s1.equals(s4));
+		
+	}
+
+}

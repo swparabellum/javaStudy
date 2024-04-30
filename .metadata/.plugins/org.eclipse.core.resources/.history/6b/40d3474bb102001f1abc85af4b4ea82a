@@ -1,0 +1,17 @@
+
+public class Ex01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		point1 pt1 = new point1();
+		pt1.x = 10;
+		pt1.y = 20;
+		System.out.println(pt1.x+", "+pt1.y);
+	}
+}
+
+class point1{
+	int x;
+	int y;
+	// point1(){} 디폴트 생성자 는 컴파일시 자동생성될것, 생략이 기본.
+}
